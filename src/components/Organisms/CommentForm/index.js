@@ -12,18 +12,18 @@ const CommentForm = (props) => {
     <Comments comments={comments}/>
     <hr className="divider"/>
     <TextField />
-    <Button />
+    <Button>Submit</Button>
   </section>
   );
 };
 
 CommentForm.propTypes = {
-  comments: PropTypes.arrayOf(
+  comments:
     PropTypes.shape({
       avatar: PropTypes.string,
       avatarName: PropTypes.string,
       commentText: PropTypes.string
-  })).isRequired
+  }).isRequired
 };
 
 export default CommentForm;

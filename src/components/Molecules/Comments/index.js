@@ -7,31 +7,28 @@ const Comments = (props) => {
 
   return (
     <section className="comments" {...other}>
-    comments
-    { /* comments.map((comment, i) =>
-      <div className="comment" key={`comment-${i}`}>
+      <div className="comment">
         <div className="comment__avatar">
-          <Avatar image={comment.avatar} alt={comment.avatarName} />
+          <Avatar image={comments.avatar} altText={comments.avatarName} />
           <span className="comment__avatarName">
-            {comment.avatarName}
+            {comments.avatarName}
           </span>
         </div>
         <div className="comment__content">
-          {comment.commentText}
+          {comments.commentText}
         </div>
       </div>
-  )*/}
     </section>
   );
 };
 
 Comments.propTypes = {
-  comments: PropTypes.arrayOf(
+  comments:
     PropTypes.shape({
       avatar: PropTypes.string,
       avatarName: PropTypes.string,
       commentText: PropTypes.string
-  })).isRequired
+  }).isRequired
 };
 
 export default Comments;

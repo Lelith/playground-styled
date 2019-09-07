@@ -2,18 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Content = (props) => {
-  const { children } = props;
+  const { blogText } = props;
 
 
   return (
-    <article className="content">
-      {children}
-    </article>
+    <article className="content"  dangerouslySetInnerHTML={{ __html: blogText }} />
   );
 };
 
 Content.propTypes = {
-  children: PropTypes.element.isRequired
+  blogText: PropTypes.string.isRequired
 };
 
 

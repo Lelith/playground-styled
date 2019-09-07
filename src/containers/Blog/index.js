@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import {ContentList, Content, CommentForm } from '../../components';
 const Blog = (props) => {
   const { content } = props;
-
   return (
     <section className="blogContainer">
       <img src={content.image} alt={content.imageAlt} />
-      <ContentList elements={content.list} />
+      <ContentList listElements={content.list} />
       <Content blogText={content.blogText} />
-      <CommentForm />
+      <CommentForm comments={content.comments}/>
     </section>
   );
 };

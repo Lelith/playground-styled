@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div classname="content">
+      <div className="content">
         <Blog content={BlogPostContent}/>
       </div>
       <Footer />

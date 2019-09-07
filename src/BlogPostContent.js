@@ -15,3 +15,4 @@ const BlogPostContent = {
   }
 }
 
+export default BlogPostContent
