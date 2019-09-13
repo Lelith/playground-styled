@@ -15,7 +15,7 @@ const CommentArea = (props) => {
       <TextField />
       <div className="comment__form__actions">
         <Button className="comment__form__actions__btn">Submit</Button>
-        <Button className='secondary comment__form__actions__btn'>Decline</Button>
+        <Button className="secondary comment__form__actions__btn">Decline</Button>
       </div>
     </form>
   </section>
