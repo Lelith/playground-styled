@@ -1,23 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const Button = (props) => {
-  const { children, ...other } = props;
+  const { children, className, ...other } = props;
 
-
+    const buttonClasses = classNames(
+      'button',
+      className
+    );
   return (
-    <button className="button" {...other} >
+    <button className={buttonClasses} {...other} >
       {children}
     </button>
   );
 };
 
 Button.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
 Button.defaultProps = {
-  children: null
+  children: null,
+  className: ''
 };
 
 export default Button;

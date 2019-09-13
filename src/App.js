@@ -7,9 +7,9 @@ import Blog from './containers/Blog'
 
 function App() {
   return (
-    <div className="App">
+    <div className="grid">
       <Header />
-      <div className="content">
+      <div className="main">
         <Blog content={BlogPostContent}/>
       </div>
       <Footer />

@@ -4,7 +4,7 @@ import ContentList from './Atoms/ContentList';
 import Content from './Atoms/Content';
 import TextField from './Atoms/TextField';
 import Comments from './Molecules/Comments';
-import CommentForm from './Organisms/CommentForm';
+import CommentArea from './Organisms/CommentArea';
 import Header from './Organisms/Header';
 import Footer from './Organisms/Footer';
 
@@ -15,7 +15,7 @@ export {
   Content,
   TextField,
   Comments,
-  CommentForm,
+  CommentArea,
   Header,
   Footer
 };

@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ContentList, Content, CommentForm } from '../../components';
+import {ContentList, Content, CommentArea, Button } from '../../components';
 const Blog = (props) => {
   const { content } = props;
   return (
     <section className="blogContainer">
-      <img src={content.image} alt={content.imageAlt} />
+      <div className="profile">
+        <img className="profile__image" src={content.image} alt={content.imageAlt} />
+        <Button className="superlike profile__button">
+          <span aria-label="heart black" role="img">
+            🖤
+          </span>
+        </Button>
+      </div>
       <ContentList listElements={content.list} />
       <Content blogText={content.blogText} />
-      <CommentForm comments={content.comments}/>
+      <CommentArea comments={content.comments}/>
     </section>
   );
 };

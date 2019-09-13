@@ -4,20 +4,25 @@ import Comments from  '../../Molecules/Comments';
 import Button from '../../Atoms/Button';
 import TextField from '../../Atoms/TextField';
 
-const CommentForm = (props) => {
+const CommentArea = (props) => {
   const {comments} = props;
 
   return (
-  <section className="commentForm">
+  <section className="commentArea">
     <Comments comments={comments}/>
     <hr className="divider"/>
-    <TextField />
-    <Button>Submit</Button>
+    <form className="comment__form">
+      <TextField />
+      <div className="comment__form__actions">
+        <Button className="comment__form__actions__btn">Submit</Button>
+        <Button className='secondary comment__form__actions__btn'>Decline</Button>
+      </div>
+    </form>
   </section>
   );
 };
 
-CommentForm.propTypes = {
+CommentArea.propTypes = {
   comments:
     PropTypes.shape({
       avatar: PropTypes.string,
@@ -26,4 +31,4 @@ CommentForm.propTypes = {
   }).isRequired
 };
 
-export default CommentForm;
+export default CommentArea;
