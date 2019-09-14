@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {ContentList, Content, CommentArea, Button } from '../../components';
+import './blog.css';
+import './profile.css';
 const Blog = (props) => {
   const { content } = props;
   return (

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Comments from  '../../Molecules/Comments';
 import Button from '../../Atoms/Button';
 import TextField from '../../Atoms/TextField';
+import './comments.css';
 
 const CommentArea = (props) => {
   const {comments} = props;

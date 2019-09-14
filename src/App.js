@@ -1,9 +1,9 @@
 import React from 'react';
-
-import BlogPostContent from './BlogPostContent'
-
-import { Header, Footer } from './components'
-import Blog from './containers/Blog'
+import BlogPostContent from './BlogPostContent';
+import { Header, Footer } from './components';
+import Blog from './containers/Blog';
+import './base.css';
+import './grid.css';
 
 function App() {
   return (
