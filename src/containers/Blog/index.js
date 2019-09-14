@@ -1,24 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ContentList, Content, CommentArea, Button } from '../../components';
-import './blog.css';
-import './profile.css';
+import {ContentList, Content, CommentArea, Profile} from '../../components';
+
+import styled from 'styled-components'
+
+const BlogContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+`
 const Blog = (props) => {
   const { content } = props;
   return (
-    <section className="blogContainer">
-      <div className="profile">
-        <img className="profile__image" src={content.image} alt={content.imageAlt} />
-        <Button className="superlike profile__button">
-          <span aria-label="heart black" role="img">
-            🖤
-          </span>
-        </Button>
-      </div>
+    <BlogContainer>
+      <Profile image = {content.image} imageAlt={content.imageAlt}/>
       <ContentList listElements={content.list} />
       <Content blogText={content.blogText} />
       <CommentArea comments={content.comments}/>
-    </section>
+    </BlogContainer>
   );
 };
 

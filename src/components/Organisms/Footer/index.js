@@ -1,9 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const FooterStyle = styled.footer`
+ grid-area: footer;
+`
+
 const Footer = () => {
   return (
-  <footer className="footer">
+  <FooterStyle>
   made by <a href="https://github.com/Lelith/playground-styled" target="_blank" rel="noopener noreferrer" info="github repository"> Kathrin </a>
-  </footer>
+  </FooterStyle>
   );
 };
 
