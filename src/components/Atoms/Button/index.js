@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const Button = styled.button`
   background:  ${props => props.secondary ? "#fff" : "#5CBCFF"};

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {SuperLike} from '../../Atoms/Button';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const Profile = (props) => {
   const {image, imageAlt} = props;

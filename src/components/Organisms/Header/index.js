@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './logo.png';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const HeaderStyle = styled.header`
   grid-area: header;

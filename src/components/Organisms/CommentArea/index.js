@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Comments from  '../../Molecules/Comments';
 import {Button} from '../../Atoms/Button';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import TextField from '../../Atoms/TextField';
 
 const CommentArea = (props) => {

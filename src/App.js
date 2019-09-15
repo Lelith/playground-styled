@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import BlogPostContent from './BlogPostContent';
 import { Header, Footer } from './components';
 import Blog from './containers/Blog';
