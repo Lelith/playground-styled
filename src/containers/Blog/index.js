@@ -14,6 +14,7 @@ const BlogContainer = styled.section`
 `
 const Wrapper = styled(WrapperComponent)`
   background-color: SkyBlue;
+  margin: 25px;
 `;
 
 const Blog = (props) => {

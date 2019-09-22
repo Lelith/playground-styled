@@ -3,16 +3,19 @@ import PropTypes from 'prop-types';
 import Wrapper from './Wrapper';
 import styled from 'styled-components/macro';
 
-const WrapperComponent = ({headline, children}) => {
+const WrapperComponent = ({headline, children, ...other}) => {
 
+const StyledWrapper = styled(Wrapper)`
+  display: flex;
+`
 const Headline = styled.h3`
   color: Plum;
 `
   return (
-      <Wrapper>
+      <StyledWrapper {...other}>
         <Headline>{headline}</Headline>
         {children}
-      </Wrapper>
+      </StyledWrapper>
   );
 };
 export default WrapperComponent;
