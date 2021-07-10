@@ -1,19 +1,33 @@
 import React from 'react';
+import styled from 'styled-components/macro';
+import BlogPostContent from './BlogPostContent';
+import { Header, Footer } from './components';
+import Blog from './containers/Blog';
 
-import BlogPostContent from './BlogPostContent'
+const Grid = styled.div`
+  background: ivory;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 140px 50px auto 50px 140px;
+  grid-template-areas:
+  "header header header header header"
+  ". main main main ."
+  "footer footer footer footer footer"
+`
 
-import { Header, Footer } from './components'
-import Blog from './containers/Blog'
+const Main = styled.div`
+  grid-area: main;
+`
 
 function App() {
   return (
-    <div className="App">
+    <Grid>
       <Header />
-      <div className="content">
+      <Main>
         <Blog content={BlogPostContent}/>
-      </div>
+      </Main>
       <Footer />
-    </div>
+    </Grid>
   );
 }
 

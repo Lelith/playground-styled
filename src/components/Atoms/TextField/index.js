@@ -1,11 +1,8 @@
-import React from 'react';
+import styled from 'styled-components'
 
-const TextField = (props) => {
-  const { ...other } = props;
-
-  return (
-    <textarea className='textField' {...other} />
-  );
-};
-
+const TextField = styled.textarea`
+  width: 800px;
+  height: 250px;
+  display: block;
+`
 export default TextField;
