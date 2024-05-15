@@ -6,7 +6,7 @@ const Content = (props) => {
 
 
   return (
-    <article className="content"  dangerouslySetInnerHTML={{ __html: blogText }} />
+    <article dangerouslySetInnerHTML={{ __html: blogText }} />
   );
 };
 
