@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components/macro';
 
 const Avatar = (props) => {
   const { image, altText } = props;
-
+  const AvatarStyle = styled.img`
+    max-width: 250px;
+  `
 
   return (
-    <img src={image} className="avatar" alt={altText} />
+    <AvatarStyle src={image} alt={altText} />
   );
 };
 
